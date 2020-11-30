@@ -22,7 +22,8 @@ export default class App extends Component {
 
  componentDidMount() {
    Accelerometer.setUpdateInterval(1000)
-   Gyroscope.setUpdateInterval(1000)
+   Gyroscope.setUpdateInterval(100
+    )
    Accelerometer.addListener(({x, y}) => {
 
      let adata = this.state.dataA.slice();
